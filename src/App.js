@@ -1,7 +1,23 @@
+import React, { useEffect, useState } from "react";
 import "./App.css";
 import Videos from "./Pages/Video";
+import db from "./config/firebase";
+import { collection, getDocs } from "firebase/firestore/lite";
 
 function App() {
+
+  const [video, setVideos] = useState([])
+
+  async function getVideos() {
+    const videosCollection = collection(db, "videos")
+    const videosSnapshot = await getDocs(videosCollection)
+    
+  }
+
+  useEffect(() => {
+    getVideos();
+  }, []);
+
   return (
     <div className="App">
       <div className="app__videos">
@@ -23,14 +39,14 @@ function App() {
           music="Original song"
           url="https://cdn.pixabay.com/vimeo/750216590/garota-131155.mp4?width=360&hash=51dbacaa27eee551b2e84ac4b06fb67f4a086ed7"
         />
-        <Videos 
-          likes={940} 
-          messages={474} 
-          shares={200} 
+        <Videos
+          likes={940}
+          messages={474}
+          shares={200}
           name="Sweet_poopies1"
           description="It`s so cuuut!"
           url="https://cdn.pixabay.com/vimeo/772291290/cachorro-139433.mp4?width=720&hash=ab870e9916926227b70db106e5df96957b6f05b1"
-          />
+        />
       </div>
     </div>
   );
