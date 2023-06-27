@@ -5,33 +5,33 @@ import FavoriteIcon from "@mui/icons-material/Favorite";
 import ChatIcon from "@mui/icons-material/Chat";
 import ShareIcon from "@mui/icons-material/Share";
 
-function VideoSidebar() {
+function VideoSidebar({ likes, messages, shares }) {
+  const [liked, setLiked] = useState(false);
 
-    const [liked, setLiked] = useState(false)
-
-    function handleLike(){
-        setLiked(!liked)
-    }
+  function handleLike() {
+    setLiked(!liked);
+  }
 
   return (
     <div className="videoSidebar">
-      <div 
-      className="videoSidebar__options"
-      onClick={handleLike}
-      >
-        { liked ? <FavoriteIcon fontSize="medium"/> :         <FavoriteBorderIcon fontSize="medium" /> }
+      <div className="videoSidebar__options" onClick={handleLike}>
+        {liked ? (
+          <FavoriteIcon fontSize="medium" />
+        ) : (
+          <FavoriteBorderIcon fontSize="medium" />
+        )}
 
-        <p> {liked ? 820 + 1 : 300} </p>
+        <p> {liked ? likes + 1 : likes} </p>
       </div>
 
       <div className="videoSidebar__options">
         <ChatIcon fontSize="medium" />
-        <p>200 </p>
+        <p>{messages} </p>
       </div>
 
       <div className="videoSidebar__options">
         <ShareIcon fontSize="medium" />
-        <p>800 </p>
+        <p>{shares} </p>
       </div>
     </div>
   );
