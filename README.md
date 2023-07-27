@@ -1,9 +1,9 @@
-# Clone TikTok
+# App de videos curtos
 > Responsive mobile version: 
 > ![image](https://github.com/brunadalmagro/Clone-TikTok/assets/96844434/d292a47c-3533-4e2d-ba43-c02663739948)
 
 
-Este projeto é um clone da interface do aplicativo TikTok, permitindo aos usuários assistir vídeos curtos fornecidos do banco de dados.
+Este projeto permite aos usuários assistir vídeos curtos fornecidos do banco de dados.
 
 ## Status do Projeto
 [![Estado do Projeto](https://img.shields.io/badge/Estado-Em%20Desenvolvimento-yellow)](https://link-do-seu-projeto-em-desenvolvimento)
