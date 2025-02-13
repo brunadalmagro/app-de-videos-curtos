@@ -1,27 +1,38 @@
-# App de videos curtos
-> Responsive mobile version: 
+# 📱 Clone de um App de Vídeos Curtos
+
+> **Versão Responsiva para Mobile:**  
 > ![image](https://github.com/brunadalmagro/Clone-TikTok/assets/96844434/d292a47c-3533-4e2d-ba43-c02663739948)
 
+Este projeto é um clone do TikTok, onde os usuários podem assistir a vídeos curtos diretamente de um banco de dados. Desenvolvido com **React.js**, ele oferece uma experiência semelhante à do aplicativo original, com funcionalidades como rolagem de vídeos, curtidas e exibição de interações.
 
-Este projeto permite aos usuários assistir vídeos curtos fornecidos do banco de dados.
+---
 
-## Status do Projeto
-[![Estado do Projeto](https://img.shields.io/badge/Estado-Em%20Desenvolvimento-yellow)](https://link-do-seu-projeto-em-desenvolvimento)
+## 🚦 Status do Projeto
 
-Este projeto está em desenvolvimento ativo.
+[![Estado do Projeto](https://img.shields.io/badge/Estado-Em%20Desenvolvimento-yellow)](https://github.com/brunadalmagro/Clone-TikTok)  
+Este projeto está **parado** atualmente. Novas funcionalidades e melhorias podem ser implementadas constantemente.
 
+---
 
-## Funcionalidades
+## ✨ Funcionalidades
 
-- Reprodução de vídeos curtos
-- Rolar para cima e para baixo para navegar entre os vídeos
-- Exibir contagem de curtidas, compartilhamento e comentários de cada vídeo
-- Curtir vídeos
+- **Reprodução de vídeos curtos**: Assista a vídeos em um feed contínuo.
+- **Navegação intuitiva**: Role para cima e para baixo para alternar entre os vídeos.
+- **Interações**: 
+  - Curtir vídeos.
+  - Visualizar contagem de curtidas, compartilhamentos e comentários.
+- **Design responsivo**: Funciona perfeitamente em dispositivos móveis.
 
-## Pré-requisitos
+---
 
-- Node.js
-- React.js
+## 🛠️ Pré-requisitos
+
+Antes de começar, certifique-se de ter instalado:
+
+- **Node.js** (versão 16 ou superior)
+- **React.js** (criado com `create-react-app`)
+
+---
 
 ## Instalação
 
